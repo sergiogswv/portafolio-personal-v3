@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Layout from "./components/Layout";
 import Intro from "./components/Intro";
 import Conocimiento from "./components/Conocimiento";
@@ -6,17 +8,19 @@ import Experiencia from "./components/Experiencia";
 import Freelance from "./components/Freelance";
 
 function App() {
+  const [encendido, setEncendido] = useState(false);
+
   return (
-    <Layout>
-      <Intro />
+    <Layout encendido={encendido} setEncendido={setEncendido}>
+      <Intro encendido={encendido} />
 
-      <Conocimiento />
+      <Conocimiento encendido={encendido} />
 
-      <Proyectos />
+      <Proyectos encendido={encendido} />
 
-      <Experiencia />
+      <Experiencia encendido={encendido} />
 
-      <Freelance />
+      <Freelance encendido={encendido} />
     </Layout>
   );
 }

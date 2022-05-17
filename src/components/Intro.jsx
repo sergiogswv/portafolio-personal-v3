@@ -2,7 +2,7 @@ import Sergio from "../public/img/img-personal.png";
 
 const Intro = () => {
   return (
-    <main className="text-white grid grid-cols-2 w-11/12 mx-auto">
+    <main className="text-white grid grid-cols-2 w-11/12 mx-auto md:mb-5">
       <div className="mx-auto my-auto">
         <h1 className="text-lg md:text-4xl lg:text-8xl">
           Me llamo <span className="colorSecondary">Sergio</span>
