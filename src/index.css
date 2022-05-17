@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .colorPrimary{
+        color: #0D0D0D;
+    }
+    .colorSecondary{
+        color: #6CAEF5;
+    }
+    .bgSecondary{
+        background-color: #6CAEF5;
+    }
+}
