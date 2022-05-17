@@ -66,16 +66,16 @@ export const experiencia = [
 export const freelance = [
   {
     id: 1,
-    nombre: "Validador de promociones",
+    nombre: "Validador de promociones ",
     fecha: "(2022)",
-    github: "https://github.com/sergiogswv/Validador-de-promociones",
+    github: "https://github.com/sergiogswv/validador",
     frontend: "React + tailwindcss + Formik; Backend: Node.js",
   },
   {
     id: 2,
     nombre: "Sistema de calificaciones CLF ",
     fecha: "(2021)",
-    github: "https://github.com/sergiogswv/System-clf",
+    github: "https://github.com/sergiogswv/systemclf",
     frontend:
       "React + Redux + tailwindcss + Formik; Backend: Node.js + MongoDB + JsonWebToken ",
   },
@@ -83,7 +83,7 @@ export const freelance = [
     id: 3,
     nombre: "Sitio Web - Escuela libre de homeopatía de México ",
     fecha: "(2020)",
-    github: "https://github.com/sergiogswv/Medicine",
+    github: "https://github.com/sergiogswv/medicine",
     frontend: "React + Gatsby + StyledComponents",
   },
 ];

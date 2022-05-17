@@ -1,9 +1,9 @@
 import { freelance } from "../helpers";
 
-const ProyectosP = () => {
+const Freelance = () => {
   return (
     <div>
-      <h1 className="text-white text-center uppercase text-lg">
+      <h1 className="text-white text-center uppercase text-lg md:text-4xl md:mb-2">
         Proyectos freelance/personales:
       </h1>
       <p className=" grid bgSecondary w-3/5 h-1 mx-auto"></p>
@@ -14,12 +14,18 @@ const ProyectosP = () => {
             key={proyecto.id}
             className="text-white text-center my-2 w-10/12"
           >
-            <h3 className="text-xl">
+            <h3 className="text-xl md:text-3xl">
               {proyecto.nombre}
-              <span className="text-xs">{proyecto.fecha}</span>
+              <span className="text-xs md:text-sm">{proyecto.fecha}</span>
             </h3>
-            <p className="colorSecondary text-sm">Github: {proyecto.github}</p>
-            <p className="colorSecondary text-sm">
+            <a
+              href={proyecto.github}
+              target="_blank"
+              className="colorSecondary text-sm md:text-xl"
+            >
+              Github: {proyecto.github}
+            </a>
+            <p className="colorSecondary text-sm md:text-xl">
               Frontend: {proyecto.frontend}
             </p>
           </div>
@@ -29,4 +35,4 @@ const ProyectosP = () => {
   );
 };
 
-export default ProyectosP;
+export default Freelance;

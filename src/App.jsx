@@ -3,7 +3,7 @@ import Intro from "./components/Intro";
 import Conocimiento from "./components/Conocimiento";
 import Proyectos from "./components/Proyectos";
 import Experiencia from "./components/Experiencia";
-import ProyectosP from "./components/ProyectosP";
+import Freelance from "./components/Freelance";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
 
       <Experiencia />
 
-      <ProyectosP />
+      <Freelance />
     </Layout>
   );
 }
