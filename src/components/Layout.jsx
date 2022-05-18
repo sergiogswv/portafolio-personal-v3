@@ -51,7 +51,7 @@ const Layout = ({ children, encendido, setEncendido }) => {
           onClick={handleEncendido}
         >
           <motion.div
-            className="w-4 h-4 md:w-7 md:h-7 bg-white rounded-[40px]"
+            className="w-4 h-4 md:w-7 md:h-7 bg-white rounded-full"
             layout
             transition={{
               type: "spring",

@@ -1,9 +1,13 @@
 import { proyectos } from "../helpers";
 
-const Proyectos = () => {
+const Proyectos = ({ encendido }) => {
   return (
     <div>
-      <h1 className="text-center text-white uppercase text-lg md:text-4xl md:mb-2 lg:text-6xl">
+      <h1
+        className={`${
+          !encendido ? "text-white" : "text-black"
+        } text-center uppercase text-lg md:text-4xl md:mb-2 lg:text-6xl`}
+      >
         Proyectos en curso:
       </h1>
       <p className=" grid bgSecondary w-3/5 h-1 mx-auto"></p>
@@ -17,7 +21,11 @@ const Proyectos = () => {
                 src={proyecto.imagen}
                 className="w-15 h-20 mx-auto my-5"
               />
-              <p className="text-white text-center w-11/12 md:text-3xl lg:text-5xl">
+              <p
+                className={`${
+                  !encendido ? "text-white" : "text-black"
+                } text-center w-11/12 md:text-3xl lg:text-5xl`}
+              >
                 {proyecto.nombre}{" "}
                 <span className="colorSecondary">{proyecto.subtitulo}</span>
               </p>

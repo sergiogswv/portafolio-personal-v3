@@ -1,9 +1,13 @@
 import { freelance } from "../helpers";
 
-const Freelance = () => {
+const Freelance = ({ encendido }) => {
   return (
     <div>
-      <h1 className="text-white text-center uppercase text-lg md:text-4xl md:mb-2 lg:text-6xl">
+      <h1
+        className={`${
+          !encendido ? "text-white" : "text-black"
+        } text-center uppercase text-lg md:text-4xl md:mb-2 lg:text-6xl`}
+      >
         Proyectos freelance/personales:
       </h1>
       <p className=" grid bgSecondary w-3/5 h-1 mx-auto"></p>
@@ -12,7 +16,9 @@ const Freelance = () => {
         {freelance.map((proyecto) => (
           <div
             key={proyecto.id}
-            className="text-white text-center my-2 w-10/12 lg:my-8"
+            className={`${
+              !encendido ? "text-white" : "text-black"
+            } text-center my-2 w-10/12 lg:my-8`}
           >
             <h3 className="text-xl md:text-3xl lg:text-5xl">
               {proyecto.nombre}

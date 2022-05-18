@@ -1,9 +1,13 @@
 import { conocimientos } from "../helpers";
 
-const Conocimiento = () => {
+const Conocimiento = ({ encendido }) => {
   return (
     <div>
-      <h1 className="text-white text-center uppercase text-lg md:text-4xl md:mb-2 lg:text-6xl">
+      <h1
+        className={`${
+          !encendido ? "text-white" : "text-black"
+        } text-center uppercase text-lg md:text-4xl md:mb-2 lg:text-6xl`}
+      >
         Conocimientos o experiencia:
       </h1>
       <p className=" grid bgSecondary w-3/5 h-1 mx-auto"></p>
@@ -23,7 +27,11 @@ const Conocimiento = () => {
               <h3 className="colorSecondary text-lg md:text-3xl lg:text-6xl">
                 {conocimiento.nombre}
               </h3>
-              <p className="text-white text-xs md:text-xl lg:text-3xl">
+              <p
+                className={`${
+                  !encendido ? "text-white" : "text-black"
+                }  text-xs md:text-xl lg:text-3xl`}
+              >
                 {conocimiento.exp}
               </p>
             </div>
