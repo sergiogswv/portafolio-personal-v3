@@ -1,4 +1,5 @@
 import Sergio from "../public/img/img-personal.png";
+import { motion } from "framer-motion";
 
 const Intro = ({ encendido }) => {
   return (
@@ -24,10 +25,13 @@ const Intro = ({ encendido }) => {
       </div>
       <div>
         {/* Imagen personal */}
-        <img
+        <motion.img
           alt="imagen personal"
           src={Sergio}
           className="md:w-5/6 md:mx-auto lg:w-2/3"
+          animate={{ y: [-300, 0] }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.8 }}
         />
       </div>
     </main>

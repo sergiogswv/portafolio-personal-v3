@@ -1,4 +1,5 @@
 import { conocimientos } from "../helpers";
+import { motion } from "framer-motion";
 
 const Conocimiento = ({ encendido }) => {
   return (
@@ -18,10 +19,12 @@ const Conocimiento = ({ encendido }) => {
             key={conocimiento.id}
             className="grid grid-cols-[30%_70%] my-4 lg:my-10"
           >
-            <img
+            <motion.img
               alt="imagen de React"
               src={conocimiento.imagen}
               className="w-10 my-auto md:w-28 lg:w-36"
+              animate={{ x: [150, -50, 0], rotate: 360 }}
+              transition={{ ease: "easeOut", duration: 3 }}
             />
             <div>
               <h3 className="colorSecondary text-lg md:text-3xl lg:text-6xl">

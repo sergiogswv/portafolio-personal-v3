@@ -1,8 +1,13 @@
 import { experiencia } from "../helpers";
+import { motion } from "framer-motion";
 
 const Experiencia = ({ encendido }) => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+    >
       <h1
         className={`${
           !encendido ? "text-white" : "text-black"
@@ -30,7 +35,7 @@ const Experiencia = ({ encendido }) => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

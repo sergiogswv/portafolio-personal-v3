@@ -1,8 +1,13 @@
 import { proyectos } from "../helpers";
+import { motion } from "framer-motion";
 
 const Proyectos = ({ encendido }) => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+    >
       <h1
         className={`${
           !encendido ? "text-white" : "text-black"
@@ -16,10 +21,12 @@ const Proyectos = ({ encendido }) => {
         {proyectos.map((proyecto) => (
           <article key={proyecto.id} className="">
             <div className="mx-auto">
-              <img
+              <motion.img
                 alt={`imagen de proyecto ${proyecto.nombre}`}
                 src={proyecto.imagen}
                 className="w-15 h-20 mx-auto my-5"
+                whileHover={{ scale: 1.5, rotate: 360 }}
+                transition={{ duration: 2 }}
               />
               <p
                 className={`${
@@ -33,7 +40,7 @@ const Proyectos = ({ encendido }) => {
           </article>
         ))}
       </section>
-    </div>
+    </motion.div>
   );
 };
 
