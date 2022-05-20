@@ -83,7 +83,7 @@ export const freelance = [
     id: 3,
     nombre: "Sitio Web - Escuela libre de homeopatía de México ",
     fecha: "(2020)",
-    github: "https://github.com/sergiogswv/medicine",
+    github: "https://github.com/sergiogswv/elhm",
     frontend: "React + Gatsby + StyledComponents",
   },
 ];
