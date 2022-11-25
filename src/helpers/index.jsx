@@ -6,30 +6,24 @@ import ImgGrapqhl from "../public/img/graphql.png";
 import ImgGit from "../public/img/git.png";
 
 export const conocimientos = [
-  { id: 1, imagen: ImgReact, nombre: "React", exp: "+1 año de exp" },
-  { id: 2, imagen: ImgRedux, nombre: "Redux", exp: "+1 proyecto de exp" },
-  { id: 3, imagen: ImgNext, nombre: "Next.js", exp: "+2 proyectos de exp" },
-  { id: 4, imagen: ImgSql, nombre: "SQL", exp: "+3 años de exp (uso diario)" },
-  { id: 5, imagen: ImgGrapqhl, nombre: "Graphql", exp: "+1 proyecto de exp" },
-  { id: 6, imagen: ImgGit, nombre: "Git", exp: "Uso de Github para proyectos" },
+  { id: 1, imagen: ImgReact, nombre: "React", exp: "+2 año de exp. JS & TS" },
+  { id: 2, imagen: ImgRedux, nombre: "Redux" },
+  { id: 3, imagen: ImgNext, nombre: "Next.js", exp: "+1 año de exp" },
+  { id: 4, imagen: ImgSql, nombre: "SQL", exp: "+3 años de exp" },
+  { id: 5, imagen: ImgGrapqhl, nombre: "Graphql" },
+  { id: 6, imagen: ImgGit, nombre: "Git" },
 ];
 
-import ImgSantander from "../public/img/santander.png";
-import ImgBshop from "../public/img/bshop.png";
+// import ImgSantander from "../public/img/santander.png";
+// import ImgBshop from "../public/img/bshop.png";
 import ImgReactNative from "../public/img/react-native.png";
 
 export const proyectos = [
   {
-    id: 1,
-    imagen: ImgSantander,
-    nombre: "Beca Santander:",
-    subtitulo: "Data Science",
-  },
-  {
     id: 2,
-    imagen: ImgBshop,
-    nombre: "Bshop",
-    subtitulo: "e-commerce (Next.js)",
+    imagen: ImgReact,
+    nombre: "Curso avanzado con Typescript",
+    subtitulo: "(Next.js)",
   },
   {
     id: 3,
@@ -42,20 +36,27 @@ export const proyectos = [
 export const experiencia = [
   {
     id: 1,
+    nombre: "Periódico El Economista",
+    fecha: "(2022 - Actual)",
+    actividades:
+      "Programador Frontend, integración continua con proyectos ya iniciados, creación de nuevos proyectos con react.",
+  },
+  {
+    id: 2,
     nombre: "Nadro",
-    fecha: "(2019 - Actual)",
+    fecha: "(2019 - 2022)",
     actividades:
       "Analista de IT (Desarrollo de validador para promociones, Analista de Datos, Integraciones a WS con nuevos clientes, Conciliaciones con Autoservicios, etc)",
   },
   {
-    id: 2,
+    id: 3,
     nombre: "Escuela Libre de Homeopatía de México",
     fecha: "(2016 - 2019)",
     actividades:
       "Encargado del área de Sistemas (Creación y actualización de pag. web, Soporte técnico, Cableado)",
   },
   {
-    id: 3,
+    id: 4,
     nombre: "Compañía Mexicana de Procesamiento",
     fecha: "(2014 - 2016)",
     actividades:

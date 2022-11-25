@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, lazy } from "react";
 
 import Layout from "./components/Layout";
-import Intro from "./components/Intro";
-import Conocimiento from "./components/Conocimiento";
-import Proyectos from "./components/Proyectos";
-import Experiencia from "./components/Experiencia";
-import Freelance from "./components/Freelance";
+
+const Intro = lazy(() => import('./components/Intro'))
+const Conocimiento = lazy(() => import('./components/Conocimiento'))
+const Proyectos = lazy(() => import('./components/Proyectos'))
+const Experiencia = lazy(() => import('./components/Experiencia'))
+const Freelance = lazy(() => import('./components/Freelance'))
+
 
 function App() {
   const [encendido, setEncendido] = useState(false);

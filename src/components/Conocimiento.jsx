@@ -35,7 +35,7 @@ const Conocimiento = ({ encendido }) => {
                   !encendido ? "text-white" : "text-black"
                 }  text-xs md:text-xl lg:text-3xl`}
               >
-                {conocimiento.exp}
+                {conocimiento?.exp}
               </p>
             </div>
           </article>
