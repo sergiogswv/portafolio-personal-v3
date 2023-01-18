@@ -18,7 +18,7 @@ function App() {
 
       <Conocimiento encendido={encendido} />
 
-      <Proyectos encendido={encendido} />
+      {/* <Proyectos encendido={encendido} /> */}
 
       <Experiencia encendido={encendido} />
 

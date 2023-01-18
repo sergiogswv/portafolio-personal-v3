@@ -17,7 +17,7 @@ const Experiencia = ({ encendido }) => {
       </h1>
       <p className=" grid bgSecondary w-3/5 h-1 mx-auto"></p>
 
-      <div className="flex justify-around flex-wrap">
+      <div className="flex justify-around flex-wrap w-10/12 mx-auto">
         {experiencia.map((exp) => (
           <div
             key={exp.id}
@@ -29,7 +29,8 @@ const Experiencia = ({ encendido }) => {
             <p className="text-xs text-gray-400 md:text-sm lg:text-xl">
               {exp.fecha}
             </p>
-            <p className="colorSecondary md:text-2xl md:mx-auto md:w-10/12 lg:text-3xl">
+            <p className="colorSecondary md:text-2xl md:mx-auto md:w-10/12 lg:text-2xl">
+              <span className="text-white">{exp.lugar}: </span>
               {exp.actividades}
             </p>
           </div>

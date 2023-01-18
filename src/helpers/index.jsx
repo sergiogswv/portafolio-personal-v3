@@ -36,44 +36,55 @@ export const proyectos = [
 export const experiencia = [
   {
     id: 1,
-    nombre: "Periódico El Economista",
+    nombre: "Programador Frontend",
     fecha: "(2022 - Actual)",
     actividades:
-      "Programador Frontend, integración continua con proyectos ya iniciados, creación de nuevos proyectos con react.",
+      "integración continua con proyectos ya iniciados, creación de nuevos proyectos con react.",
+    lugar: "Periódico El Economista",
   },
   {
     id: 2,
-    nombre: "Nadro",
+    nombre: "Analista de IT",
     fecha: "(2019 - 2022)",
     actividades:
-      "Analista de IT (Desarrollo de validador para promociones, Analista de Datos, Integraciones a WS con nuevos clientes, Conciliaciones con Autoservicios, etc)",
+      "Desarrollo de validador para promociones, Analista de Datos, Integraciones a WS con nuevos clientes, Conciliaciones con Autoservicios, etc",
+    lugar: "Nadro",
   },
   {
     id: 3,
-    nombre: "Escuela Libre de Homeopatía de México",
+    nombre: "Encargado del área de Sistemas",
     fecha: "(2016 - 2019)",
     actividades:
-      "Encargado del área de Sistemas (Creación y actualización de pag. web, Soporte técnico, Cableado)",
+      "Creación y actualización de pag. web, Soporte técnico, Cableado",
+    lugar: "Escuela Libre de Homeopatía de México",
   },
   {
     id: 4,
-    nombre: "Compañía Mexicana de Procesamiento",
+    nombre: "Data Stage",
     fecha: "(2014 - 2016)",
     actividades:
       "Data Stage (Generación y procesamiento de archivos), Soporte técnico",
+    lugar: "Compañía Mexicana de Procesamiento",
   },
 ];
 
 export const freelance = [
   {
     id: 1,
+    nombre: "Crypto Stats ",
+    fecha: "(2023)",
+    github: "https://github.com/sergiogswv/CriptoStats",
+    frontend: "React + tailwindcss",
+  },
+  {
+    id: 2,
     nombre: "Validador de promociones ",
     fecha: "(2022)",
     github: "https://github.com/sergiogswv/validador",
     frontend: "React + tailwindcss + Formik; Backend: Node.js",
   },
   {
-    id: 2,
+    id: 3,
     nombre: "Sistema de calificaciones CLF ",
     fecha: "(2021)",
     github: "https://github.com/sergiogswv/systemclf",
@@ -81,7 +92,7 @@ export const freelance = [
       "React + Redux + tailwindcss + Formik; Backend: Node.js + MongoDB + JsonWebToken ",
   },
   {
-    id: 3,
+    id: 4,
     nombre: "Sitio Web - Escuela libre de homeopatía de México ",
     fecha: "(2020)",
     github: "https://github.com/sergiogswv/elhm",

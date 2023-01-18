@@ -13,7 +13,7 @@ const Conocimiento = ({ encendido }) => {
       </h1>
       <p className=" grid bgSecondary w-3/5 h-1 mx-auto"></p>
 
-      <section className="grid grid-cols-2 w-11/12 mx-auto md:grid-cols-3 md:my-5 lg:my-10">
+      <section className="grid grid-cols-2 w-10/12 mx-auto md:grid-cols-3 md:my-5 lg:my-5">
         {conocimientos.map((conocimiento) => (
           <article
             key={conocimiento.id}
@@ -22,7 +22,7 @@ const Conocimiento = ({ encendido }) => {
             <motion.img
               alt="imagen de React"
               src={conocimiento.imagen}
-              className="w-10 my-auto md:w-28 lg:w-36"
+              className="w-10 my-auto md:w-20 lg:w-24"
               animate={{ x: [150, -50, 0], rotate: 360 }}
               transition={{ ease: "easeOut", duration: 3 }}
             />
@@ -33,7 +33,7 @@ const Conocimiento = ({ encendido }) => {
               <p
                 className={`${
                   !encendido ? "text-white" : "text-black"
-                }  text-xs md:text-xl lg:text-3xl`}
+                }  text-xs md:text-xl lg:text-xl`}
               >
                 {conocimiento?.exp}
               </p>
